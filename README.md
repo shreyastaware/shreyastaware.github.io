@@ -1,8 +1,10 @@
 ## About me
 
-I like writing, coding, and designing websites.
+I am a Mechanical Engineer turned into a Freelancer building websites for a living.
 
-I write on [DEV](https://dev.to/shreyastaware), [HashNode](https://shreyastaware.hashnode.dev/), and [HackerNoon](https://hackernoon.com/u/shreyastaware).
+In my free time, I like to Write and play Chess.
+
+You can find my Tech blogs on [DEV](https://dev.to/shreyastaware), [HashNode](https://shreyastaware.hashnode.dev/), and [HackerNoon](https://hackernoon.com/u/shreyastaware).
 
 I am also interested in Business, Philosophy, Real Estate, and a whole bunch of other topics.
 
@@ -33,4 +35,4 @@ You can find my blogs covering those topics on my [Medium](https://medium.com/@s
 
 ## Work-related Queries
 
-Please reach out to me: shreyastaware.work@gmail.com
+Please reach out to me: [shreyastaware.work@gmail.com](mailto:shreyastaware.work@gmail.com)
