@@ -1,5 +1,3 @@
-# Shreyas Taware
-
 I like writing, coding, and designing websites.
 
 I write on [DEV](https://dev.to/shreyastaware), [HashNode](https://shreyastaware.hashnode.dev/), and [HackerNoon](https://hackernoon.com/u/shreyastaware).
