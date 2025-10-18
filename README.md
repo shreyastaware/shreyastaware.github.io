@@ -12,9 +12,10 @@ You can find my blogs covering those topics on my [Medium](https://medium.com/@s
 
 ## Freelancing Services
 
-- Landing Page Design (Figma, Framer)
+- Landing Page Design (Wordpress, Webflow, Figma, Framer)
 - Landing Page Revamp
 - Landing Page Copy
+- E-Commerce Website Setup (WooCommerce, Shopify)
 - MVP Development (Landing Page + 1-2 Features + Pricing Integration)
 - Mobile App Development (both Android & iOS)
 - Setup Self-Hosted Web Crawlers, Version Control, CRM Solutions
