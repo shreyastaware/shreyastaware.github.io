@@ -4,7 +4,9 @@ I am a Mechanical Engineer turned into a Freelancer building websites for a livi
 
 In my free time, I like to Write and play Chess.
 
-You can find my Tech blogs on [DEV](https://dev.to/shreyastaware) and [HashNode](https://shreyastaware.hashnode.dev/).
+You can find my Tech blogs on [DEV](https://dev.to/shreyastaware) and [HashNode](https://hashnode.shreyastaware.me/blog).
+
+You can find my blogs on Freelancing, Entrepreneurship, Real Estate, and Life on my [Medium](https://medium.com/@shreyastaware) and [SubStack](https://shreyastaware.substack.com/).
 
 ## Freelancing Services
 
