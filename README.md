@@ -35,3 +35,9 @@ You can find my blogs on Freelancing, Entrepreneurship, Real Estate, and Life on
 ## Work-related Queries
 
 Please reach out to me: [shreyastaware.work@gmail.com](mailto:shreyastaware.work@gmail.com)
+
+## Coaching
+
+I offer career guidance & coaching to aspiring software engineers as well as people looking forward to grow in their career.
+
+If you'd like to book a call with me regarding that, feel free to follow the instructions given [here](https://checkout.dodopayments.com/buy/pdt_r8IFRXP6ONFQ2wSvO5KGK?quantity=1).
