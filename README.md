@@ -4,11 +4,9 @@ I am a Mechanical Engineer turned into a Freelancer building websites for a livi
 
 In my free time, I like to Write and play Chess.
 
-You can find my Tech blogs on [DEV](https://dev.to/shreyastaware), [HashNode](https://shreyastaware.hashnode.dev/), and [HackerNoon](https://hackernoon.com/u/shreyastaware).
+You can find my Tech blogs on [DEV](https://dev.to/shreyastaware) and [HashNode](https://hashnode.shreyastaware.me/blog).
 
-I am also interested in Business, Philosophy, Real Estate, and a whole bunch of other topics.
-
-You can find my blogs covering those topics on my [Medium](https://medium.com/@shreyastaware) and my [SubStack](https://shreyastaware.substack.com/).
+You can find my blogs on Freelancing, Entrepreneurship, Real Estate, and Life on my [Medium](https://medium.com/@shreyastaware) and [SubStack](https://shreyastaware.substack.com/).
 
 ## Freelancing Services
 
@@ -37,3 +35,9 @@ You can find my blogs covering those topics on my [Medium](https://medium.com/@s
 ## Work-related Queries
 
 Please reach out to me: [shreyastaware.work@gmail.com](mailto:shreyastaware.work@gmail.com)
+
+## Coaching
+
+I offer career guidance & coaching to aspiring software engineers as well as people looking forward to grow in their career.
+
+If you'd like to book a call with me regarding that, feel free to follow the instructions given [here](https://checkout.dodopayments.com/buy/pdt_r8IFRXP6ONFQ2wSvO5KGK?quantity=1).
