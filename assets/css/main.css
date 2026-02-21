@@ -2,6 +2,67 @@ main {
     display: flex;
     margin: 0 auto;
     height: 100vh;
+    /* min-width: 360px;  */
+}
+
+/* Default (Desktop) */
+.dropdown {
+  display: none;
+}
+
+li a {
+    padding: 1em;
+    justify-content: center;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+/* this adds a weird padding
+when resizing between 870px width to
+670px width to 505px width */
+@media (max-width: 670px) {
+    section {
+        padding: 1em !important;
+    }
+}
+
+@media (max-width: 870px) { /* 768px is 
+    generally used for mobile */
+
+    .dropdown {
+        display: block;
+    }    
+    
+    .nav-links {
+        display: none;
+    }
+
+    .nav-container .nav-links {
+        display: none;
+    }    
+
+    section {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    img {
+        order: -1;
+        margin: 0 auto;
+        /* width: 370px; */
+    }
+
+    section {
+        width: 100% !important;
+        margin: 0 auto;
+    }
 }
 
 .profile {
@@ -17,15 +78,19 @@ section div {
 }
 
 section {
-    padding: 2em 4em;
+    padding: 2em 4em;   
     display: flex;
     flex-direction: column;
+    /* width: 855px; */
     width: 60%;
+    /* min-width: 670px; */
+    min-width: 505px;
 }
 
 img {
     padding: 1em;
     border-radius: 6%;
+    width: 528px;
 }
 
 .breaking-line {

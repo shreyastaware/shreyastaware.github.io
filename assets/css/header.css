@@ -3,6 +3,10 @@ header {
     margin: 0 auto;
 }
 
+.nav-logo {
+    white-space: nowrap;
+}
+
 nav {
     padding: 1em;
 }
