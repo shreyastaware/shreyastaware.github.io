@@ -1,0 +1,30 @@
+header {
+    /* max-width: 620px; */
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1em;
+}
+
+.nav-container {
+    display: flex;
+}
+
+div.nav-links a, div.nav-container button, a.nav-logo {
+    padding: 1em;
+    align-items: center;
+}
+
+div.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+div.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
