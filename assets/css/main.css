@@ -23,6 +23,7 @@ when resizing between 870px width to
 @media (max-width: 670px) {
     section {
         padding: 1em !important;
+        /* width: 505px !important; */
     }
 }
 
@@ -39,7 +40,7 @@ when resizing between 870px width to
 
     .nav-container .nav-links {
         display: none;
-    }    
+    }
 
     section {
         width: 100% !important;
@@ -57,12 +58,13 @@ when resizing between 870px width to
         order: -1;
         margin: 0 auto;
         /* width: 370px; */
-    }
+        /* padding: 1em 2em !important; */
+    } 
 
     section {
         width: 100% !important;
         margin: 0 auto;
-    }
+    }    
 }
 
 .profile {
