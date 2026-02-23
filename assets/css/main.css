@@ -92,7 +92,8 @@ section {
 img {
     padding: 1em;
     border-radius: 6%;
-    width: 528px;
+    max-width: 100%;
+    height: auto;    
 }
 
 .breaking-line {
