@@ -1,7 +1,9 @@
 main {
     display: flex;
     margin: 0 auto;
-    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--bg-color);
     /* min-width: 360px;  */
 }
 
@@ -45,7 +47,7 @@ when resizing between 870px width to
     section {
         width: 100% !important;
         margin: 0 auto;
-    }
+    } 
 }
 
 
@@ -80,20 +82,24 @@ section div {
 }
 
 section {
-    padding: 2em 4em;   
+    padding: 2em;   
     display: flex;
     flex-direction: column;
     /* width: 855px; */
-    width: 60%;
+    /* width: 80%; */
     /* min-width: 670px; */
+    width: 100%;
     min-width: 505px;
 }
 
 img {
     padding: 1em;
     border-radius: 6%;
-    max-width: 100%;
-    height: auto;    
+    /* max-width: 100%;
+    height: auto;     */
+    aspect-ratio: auto;
+    height: 650px;
+    max-height: 650px;
 }
 
 .breaking-line {

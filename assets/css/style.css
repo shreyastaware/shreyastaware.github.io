@@ -5,6 +5,12 @@ html, body {
     font-family: Inter;
 }
 
+
+:root {
+    --bg-color: white;
+}
+
 body {
     height: 100vh;
+    background-color: var(--bg-color);
 }
