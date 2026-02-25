@@ -94,10 +94,6 @@ section {
 img {
     padding: 1em;
     border-radius: 6%;
-    /* max-width: 100%;
-    height: auto;     */
-    aspect-ratio: initial;
-    height: 100%;
     max-height: 650px;
 }
 
