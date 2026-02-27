@@ -5,9 +5,9 @@ html, body {
     font-family: Inter;
 }
 
-
 :root {
     --bg-color: white;
+    --spoiler-color: rgb(124, 124, 124);
 }
 
 body {

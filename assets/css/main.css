@@ -4,19 +4,6 @@ main {
     max-width: 1200px;
     width: 100%;
     background-color: var(--bg-color);
-    /* min-width: 360px;  */
-}
-
-/* Default (Desktop) */
-.dropdown {
-  display: none;
-}
-
-li a {
-    padding: 1em;
-    justify-content: center;
-    font-size: 16px;
-    font-family: inherit;
 }
 
 /* this adds a weird padding
@@ -31,18 +18,6 @@ when resizing between 870px width to
 
 @media (max-width: 870px) { /* 768px is 
     generally used for mobile */
-
-    .dropdown {
-        display: block;
-    }    
-    
-    .nav-links {
-        display: none;
-    }
-
-    .nav-container .nav-links {
-        display: none;
-    }
 
     section {
         width: 100% !important;
