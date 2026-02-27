@@ -12,7 +12,12 @@ when resizing between 870px width to
 @media (max-width: 670px) {
     section {
         padding: 1em !important;
+        margin-top: 0 !important;
         /* width: 505px !important; */
+    }
+
+    img {
+        margin-top: 0 !important;
     }
 }
 
@@ -23,6 +28,7 @@ when resizing between 870px width to
         width: 100% !important;
         margin: 0 auto;
     } 
+
 }
 
 
@@ -64,12 +70,14 @@ section {
     /* width: 80%; */
     /* min-width: 670px; */
     width: 100%;
+    margin-top: 1em;
 }
 
 img {
     padding: 1em;
     border-radius: 6%;
     max-height: 650px;
+    margin-top: 2em;
 }
 
 .breaking-line {
