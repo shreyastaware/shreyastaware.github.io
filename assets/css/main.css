@@ -89,16 +89,11 @@ section {
     /* width: 80%; */
     /* min-width: 670px; */
     width: 100%;
-    min-width: 505px;
 }
 
 img {
     padding: 1em;
     border-radius: 6%;
-    /* max-width: 100%;
-    height: auto;     */
-    aspect-ratio: auto;
-    height: 650px;
     max-height: 650px;
 }
 
