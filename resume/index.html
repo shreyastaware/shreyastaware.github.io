@@ -353,6 +353,25 @@
     color: #bea461 !important;
   }
 
+  @media (max-width: 1024px) {
+
+    .header-contact {
+      gap: 10px 16px;
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }   
+
+    .contact-item {
+      justify-content: center;
+    }
+    
+    .contact-dot {
+      display: none;
+    }
+  }
+
   /* ── Responsive: Tablet (≤ 700px) ── */
   @media (max-width: 700px) {
     body {
@@ -431,6 +450,12 @@
     }
   }
 
+  @media (max-width: 360px) {
+    div#email > span {
+      display: none;
+    }
+  }
+
   /* ── Responsive: Mobile (≤ 480px) ── */
   @media (max-width: 480px) {
     header {
@@ -498,7 +523,7 @@
       <div class="contact-item">📞 +91-9881039025</div>
       <div class="contact-dot"></div>
       <div class="contact-item" id="email">
-        ✉ shreyastaware.work@gmail.com
+        <span>✉</span> shreyastaware.work@gmail.com
       </div>
       <div class="contact-dot"></div>
       <div class="contact-item">
