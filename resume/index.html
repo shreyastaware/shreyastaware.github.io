@@ -55,7 +55,7 @@
   header {
     background: var(--ink);
     color: var(--white);
-    padding: 44px 52px 36px;
+    padding: 32px 52px 32px;
     position: relative;
     overflow: hidden;
   }
@@ -97,7 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 18px;
+    margin-top: 26px;
     align-items: center;
   }
 
@@ -334,6 +334,25 @@
     border-color: var(--accent);
   }
 
+
+  a.links {
+    text-decoration: none !important;  /* removes underline */
+    color: inherit !important;         /* inherits parent text color */
+  }
+
+  a.links,
+  a.links:-webkit-any-link,
+  a.links:visited,
+  a.links:hover,
+  a.links:active {
+    text-decoration: none !important;
+    color: inherit !important;
+  }  
+
+  a.links:hover {
+    color: #bea461 !important;
+  }
+
   /* ── Responsive: Tablet (≤ 700px) ── */
   @media (max-width: 700px) {
     body {
@@ -465,6 +484,7 @@
       font-size: 10.5px;
       padding: 3px 8px;
     }
+
   }
 </style>
 </head>
@@ -509,8 +529,8 @@
           <ul class="job-points">
             <li><strong>Enterprise Architecture:</strong> Created a comprehensive Project Plan for an ERP Desktop Software tailored for local business operations.</li>
             <li><strong>Scalable Web Crawler:</strong> Developed a recurring LinkedIn crawler capable of bypassing Captcha to scrape job data. Achieved collection of <strong>1,000+ records/ day </strong>evading browser fingerprinting & proxy detection.</li>
-            <li><strong>Product Development (SubSync):</strong> Built and launched a Chrome extension for adding subtitles to local videos, achieving <strong>50+ organic users</strong>.</li>
-            <li><strong>Technical Writing:</strong> Authored <strong>10+ technical blogs</strong> across Medium, DEV Community, and HashNode to share knowledge on web development and system design.</li>
+            <li><strong>Product Development (<a class="links" href="https://chromewebstore.google.com/detail/chghedcdnfjjcdpdhknplcgobodepddd" target="_blank">SubSync</a>):</strong> Built and launched a Chrome extension for adding subtitles to local videos, achieving <strong>45+ organic users</strong>.</li>
+            <li><strong>Technical Writing:</strong> Authored <strong>10+ technical blogs</strong> across <a class="links" href="https://medium.com/@shreyastaware" target="_blank">Medium</a>, <a class="links" href="https://dev.to/shreyastaware" target="_blank">DEV Community</a>, and <a class="links" href="https://hashnode.shreyastaware.me/blog" target="_blank">HashNode</a> to share knowledge on web development and system design.</li>
           </ul>
         </div>
 
