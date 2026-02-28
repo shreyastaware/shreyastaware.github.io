@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shreyas Taware — Resume</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --ink: #1a1a2e;
@@ -85,6 +86,7 @@
     line-height: 1;
     color: var(--white);
     margin-bottom: 4px;
+    text-align: center;
   }
 
   .header-name span {
@@ -332,18 +334,138 @@
     border-color: var(--accent);
   }
 
-  #email{
-  user-select: none !important;
-  -webkit-user-select: none !important;
+  /* ── Responsive: Tablet (≤ 700px) ── */
+  @media (max-width: 700px) {
+    body {
+      padding: 0;
+      background: var(--white);
+    }
+
+    .page {
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+    }
+
+    header {
+      padding: 28px 24px 28px;
+    }
+
+    .header-name {
+      font-size: 32px;
+    }
+
+    .header-contact {
+      gap: 10px 16px;
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-dot {
+      display: none;
+    }
+
+    .contact-item {
+      font-size: 12px;
+      justify-content: center;
+    }
+
+    /* Stack sidebar below main on mobile */
+    .body {
+      grid-template-columns: 1fr;
+    }
+
+    .main-col {
+      padding: 28px 24px;
+      border-right: none;
+      border-bottom: 1px solid #ede8df;
+    }
+
+    .side-col {
+      padding: 28px 24px;
+      /* Reorder skill groups into 2-col grid on tablet */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+    }
+
+    /* Education and certs span full width */
+    .side-section:nth-child(3),
+    .side-section:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .job-header {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .job-period {
+      white-space: normal;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 4px 9px;
+    }
   }
 
-#email:hover{
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  cursor: text !important;
-}
+  /* ── Responsive: Mobile (≤ 480px) ── */
+  @media (max-width: 480px) {
+    header {
+      padding: 24px 18px 22px;
+    }
 
+    .header-name {
+      font-size: 26px;
+    }
 
+    .header-contact {
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .main-col {
+      padding: 22px 18px;
+    }
+
+    .side-col {
+      padding: 22px 18px;
+      grid-template-columns: 1fr;
+    }
+
+    /* All sections full width on small phones */
+    .side-section:nth-child(3),
+    .side-section:nth-child(4) {
+      grid-column: span 1;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .job-title {
+      font-size: 14px;
+    }
+
+    .job-points li {
+      font-size: 12px;
+    }
+
+    .edu-degree {
+      font-size: 13px;
+    }
+
+    .tag {
+      font-size: 10.5px;
+      padding: 3px 8px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -386,7 +508,7 @@
           <div class="job-company">Independent Technical Projects &nbsp;·&nbsp; <span class="location">Remote</span></div>
           <ul class="job-points">
             <li><strong>Enterprise Architecture:</strong> Created a comprehensive Project Plan for an ERP Desktop Software tailored for local business operations.</li>
-            <li><strong>Scalable Web Crawler:</strong> Developed a recurring LinkedIn crawler capable of bypassing Captcha to scrape job data. Achieved collection of <strong>1,000+ records/ day </strong>bypassing browser fingerprinting.</li>
+            <li><strong>Scalable Web Crawler:</strong> Developed a recurring LinkedIn crawler capable of bypassing Captcha to scrape job data. Achieved collection of <strong>1,000+ records/ day </strong>evading browser fingerprinting & proxy detection.</li>
             <li><strong>Product Development (SubSync):</strong> Built and launched a Chrome extension for adding subtitles to local videos, achieving <strong>50+ organic users</strong>.</li>
             <li><strong>Technical Writing:</strong> Authored <strong>10+ technical blogs</strong> across Medium, DEV Community, and HashNode to share knowledge on web development and system design.</li>
           </ul>
@@ -465,7 +587,7 @@
         <div class="skill-group">
           <div class="skill-category">Cloud &amp; DevOps</div>
           <div class="skill-tags">
-            <span class="tag">EC2</span>
+            <span class="tag">AWS EC2</span>
             <span class="tag">QuickSight</span>
             <span class="tag">Fargate</span>
             <span class="tag">ECS</span>
@@ -479,8 +601,8 @@
           <div class="skill-category">Soft Skills</div>
           <div class="skill-tags">
             <span class="tag soft">Leadership</span>
-            <span class="tag soft">Stakeholder Mgmt</span>
             <span class="tag soft">Adaptability</span>
+            <span class="tag soft">Stakeholder Management</span>
             <span class="tag soft">Self-Starter</span>
           </div>
         </div>
