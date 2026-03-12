@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyas Taware — Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Bangers, Bebas Neue, Inter, Poppins, 
+ Helvetica, Times New Roman, Georgia,
+ Georgia (aldaily), Domine (NY Times) -->
+
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --accent: #c9a84c;
+    --accent-light: #f5e9c8;
+    --soft: #f7f5f0;
+    --rule: #d4c5a9;
+    --muted: #6b6457;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; border-radius: 0; }
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #ede8df;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    color: var(--ink);
+  }
+
+  .page {
+    background: var(--white);
+    width: 850px;
+    max-width: 100%;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.18), 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Gold top bar */
+  .top-bar {
+    height: 5px;
+    background: linear-gradient(90deg, #c9a84c, #e8c97a, #c9a84c);
+  }
+
+  /* Header */
+  header {
+    background: var(--ink);
+    color: var(--white);
+    padding: 32px 52px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.08);
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30%;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.05);
+  }
+
+  .header-name {
+    font-family: 'Domine', serif; /* Helvetica */
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .header-name span {
+    color: var(--accent);
+  }
+
+  .header-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 26px;
+    align-items: center;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 400;
+  }
+
+  .contact-item a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-item a:hover { color: var(--accent); }
+
+  .contact-dot {
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.7;
+  }
+
+  /* Main layout */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 230px;
+    gap: 0;
+  }
+
+  .main-col {
+    padding: 38px 40px 38px 52px;
+    border-right: 1px solid #ede8df;
+  }
+
+  .side-col {
+    padding: 38px 28px 38px 28px;
+    background: var(--soft);
+  }
+
+  /* Section headers */
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .section { margin-bottom: 30px; }
+
+  /* Experience */
+  .job { margin-bottom: 24px; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2px;
+    gap: 12px;
+  }
+
+  .job-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .job-period {
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+    margin-top: 2px;
+    font-weight: 500;
+  }
+
+  .job-company {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .job-company .location {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .job-points {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .job-points li {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #3a3530;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .job-points li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 10px;
+    top: 3px;
+  }
+
+  .job-points li strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .job-divider {
+    height: 1px;
+    background: linear-gradient(90deg, var(--rule), transparent);
+    margin: 22px 0;
+  }
+
+  /* Sidebar */
+  .side-section { margin-bottom: 28px; }
+
+  .skill-group { margin-bottom: 14px; }
+
+  .skill-category {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .tag {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-size: 10.5px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .tag.soft {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: #7a5c10;
+  }
+
+  /* Education */
+  .edu-degree {
+    font-family: 'Playfair Display', serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+
+  .edu-school {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+
+  .edu-detail {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Certifications */
+  .cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .cert-item::before {
+    content: '✦';
+    color: var(--accent);
+    font-size: 8px;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  .cert-item a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--rule);
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .cert-item a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+
+  a.links {
+    text-decoration: none !important;  /* removes underline */
+    color: inherit !important;         /* inherits parent text color */
+  }
+
+  a.links,
+  a.links:-webkit-any-link,
+  a.links:visited,
+  a.links:hover,
+  a.links:active {
+    text-decoration: none !important;
+    color: inherit !important;
+  }  
+
+  a.links:hover {
+    color: #bea461 !important;
+  }
+
+  @media (max-width: 1024px) {
+
+    .header-contact {
+      gap: 10px 16px;
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }   
+
+    .contact-item {
+      justify-content: center;
+    }
+    
+    .contact-dot {
+      display: none;
+    }
+  }
+
+  /* ── Responsive: Tablet (≤ 700px) ── */
+  @media (max-width: 700px) {
+    body {
+      padding: 0;
+      background: var(--white);
+    }
+
+    .page {
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+    }
+
+    header {
+      padding: 28px 24px 28px;
+    }
+
+    .header-name {
+      font-size: 32px;
+    }
+
+    .header-contact {
+      gap: 10px 16px;
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-dot {
+      display: none;
+    }
+
+    .contact-item {
+      font-size: 12px;
+      justify-content: center;
+    }
+
+    /* Stack sidebar below main on mobile */
+    .body {
+      grid-template-columns: 1fr;
+    }
+
+    .main-col {
+      padding: 28px 24px;
+      border-right: none;
+      border-bottom: 1px solid #ede8df;
+    }
+
+    .side-col {
+      padding: 28px 24px;
+      /* Reorder skill groups into 2-col grid on tablet */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+    }
+
+    /* Education and certs span full width */
+    .side-section:nth-child(3),
+    .side-section:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .job-header {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .job-period {
+      white-space: normal;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 4px 9px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    div#email > span {
+      display: none;
+    }
+  }
+
+  /* ── Responsive: Mobile (≤ 480px) ── */
+  @media (max-width: 480px) {
+    header {
+      padding: 24px 18px 22px;
+    }
+
+    .header-name {
+      font-size: 26px;
+    }
+
+    .header-contact {
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .main-col {
+      padding: 22px 18px;
+    }
+
+    .side-col {
+      padding: 22px 18px;
+      grid-template-columns: 1fr;
+    }
+
+    /* All sections full width on small phones */
+    .side-section:nth-child(3),
+    .side-section:nth-child(4) {
+      grid-column: span 1;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .job-title {
+      font-size: 14px;
+    }
+
+    .job-points li {
+      font-size: 12px;
+    }
+
+    .edu-degree {
+      font-size: 13px;
+    }
+
+    .tag {
+      font-size: 10.5px;
+      padding: 3px 8px;
+    }
+
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top-bar"></div>
+
+  <header>
+    <div class="header-name">Shreyas <span>Taware</span></div>
+    <div class="header-contact">
+      <div class="contact-item">📞 +91-9881039025</div>
+      <div class="contact-dot"></div>
+      <div class="contact-item" id="email">
+        <span>✉</span> shreyastaware.work@gmail.com
+      </div>
+      <div class="contact-dot"></div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/shreyastaware/">LinkedIn: shreyastaware</a>
+      </div>
+      <div class="contact-dot"></div>
+      <div class="contact-item">
+        <a href="https://github.com/shreyastaware">GitHub: shreyastaware</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+    <!-- Main Column -->
+    <div class="main-col">
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="section-label">Experience</div>
+
+        <!-- Consulting -->
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Software Engineer, Consulting</div>
+            <div class="job-period">June 2025 — Present</div>
+          </div>
+          <div class="job-company">Independent Technical Projects &nbsp;·&nbsp; <span class="location">Remote</span></div>
+          <ul class="job-points">
+            <li><strong>Chrome Extension (<a class="links" href="https://chromewebstore.google.com/detail/chghedcdnfjjcdpdhknplcgobodepddd" target="_blank">SubSync</a>):</strong> Built and published a Chrome extension using <strong>JavaScript</strong>, implementing popup UI, content scripts, and background service workers.</li>
+            <li>Integrated Chrome Extension APIs for media interception, ability to read File System URLs achieving <strong>50+ organic users</strong> with very minimal churn.</li>
+            <li><strong>Enterprise Architecture:</strong> Consulted a small business by creating a comprehensive System Design (LLD and HLD) for an ERP Desktop Software.</li>
+            <li><strong>Scalable Web Crawler:</strong> Developed a recurring LinkedIn crawler using <strong>Python and Selenium</strong> capable of bypassing Captcha to scrape job data. Achieved collection of <strong>1,000+ records/ day </strong>evading browser fingerprinting &amp; proxy detection.</li>
+            <li><strong>Technical Writing:</strong> Authored <strong>10+ technical blogs</strong> across <a class="links" href="https://medium.com/@shreyastaware" target="_blank">Medium</a>, <a class="links" href="https://dev.to/shreyastaware" target="_blank">DEV Community</a>, and <a class="links" href="https://hashnode.shreyastaware.me/blog" target="_blank">HashNode</a> to share knowledge on web development and system design.</li>
+          </ul>
+        </div>
+
+        <div class="job-divider"></div>
+
+        <!-- JP Morgan -->
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="job-period">May 2022 — May 2025</div>
+          </div>
+          <div class="job-company">JP Morgan Chase &amp; Co &nbsp;·&nbsp; <span class="location">Mumbai, India</span></div>
+          <ul class="job-points">
+            <li><strong>AI-Driven Automation:</strong> Engineered AI utilities for code refactoring, vulnerability scanning, and coverage testing. Integrated LLM APIs with Python to auto-generate and fix code, <strong class="red">clearing over 90%</strong> of the pending backlog.</li>
+            <li><strong>Test Case Generation:</strong> Developed a Flask-based AI test case generator, significantly reducing developer coding time and technical debt by automating test creation.</li>
+            <li><strong>Interactive SPAs:</strong> Built <strong>10+</strong> high-performance Single Page Applications using React.js, Ag-grid, and Highcharts that were live on the JPMM Research Platform.</li>
+            <li><strong>Institutional Investor Survey:</strong> Conceptualized and launched a "Sales Assignments Tool" for a prestigious financial survey, scaling the product to over <strong>1400+ end users</strong>.</li>
+            <li><strong>Leadership &amp; Efficiency:</strong> Led a team of 2 analysts in end-to-end data crawling projects, cumulatively <strong>saving more than 20,000 hours</strong> of manual work over 18 months using Python automation and Tableau.</li>
+          </ul>
+        </div>
+
+        <div class="job-divider"></div>
+
+        <!-- Authbridge -->
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Software Engineer</div>
+            <div class="job-period">May 2021 — May 2022</div>
+          </div>
+          <div class="job-company">Authbridge &nbsp;·&nbsp; <span class="location">Remote</span></div>
+          <ul class="job-points">
+            <li><strong>Data Extraction Pipeline:</strong> Implemented an automated document processing pipeline, parsing <strong>10,000+ pages daily</strong> into structured data while eliminating repetitive manual entry and reducing operational overhead.</li>
+            <li><strong>Image Processing:</strong> Implemented advanced transformations (deskewing, de-blurring, noise removal) using OpenCV and Numpy to achieve an <strong>OCR accuracy of 95%</strong>.</li>
+            <li><strong>Deep Learning Models:</strong> Created and deployed end-to-end models for Captcha Detection using TensorFlow and Keras. Designed custom architectures incorporating CNNs, RNNs, and LSTMs.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Side Column -->
+    <div class="side-col">
+
+      <!-- Skills -->
+      <div class="side-section">
+        <div class="section-label">Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-category">Web Technologies</div>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-category">State Management &amp; Testing</div>
+          <div class="skill-tags">
+            <span class="tag">React Query</span>
+            <span class="tag">Redux</span>
+            <span class="tag">Jest</span>
+            <span class="tag">Vitest</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-category">Backend &amp; Database</div>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Postgres</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-category">Cloud &amp; DevOps</div>
+          <div class="skill-tags">
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Fargate</span>
+            <span class="tag">ECS</span>
+            <span class="tag">CloudWatch</span>
+            <span class="tag">GCP APIs</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-category">Soft Skills</div>
+          <div class="skill-tags">
+            <span class="tag soft">Leadership</span>
+            <span class="tag soft">Adaptability</span>
+            <span class="tag soft">Stakeholder Management</span>
+            <span class="tag soft">Self-Starter</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="side-section">
+        <div class="section-label">Education</div>
+        <div class="edu-degree">B.Tech in Mechanical Engineering</div>
+        <div class="edu-school">Indian Institute of Technology, Patna</div>
+        <div class="edu-detail">CGPA: 8.47 / 10 &nbsp;·&nbsp; August 2021</div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="side-section">
+        <div class="section-label">Certifications</div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/H4RRDZYJXK65">Neural Networks &amp; Deep Learning</a>
+          </div>
+          <div class="cert-item">
+            <a href="https://www.kaggle.com/learn/certification/shreyastaware/intermediate-machine-learning">Intermediate Machine Learning</a>
+          </div>
+          <div class="cert-item">
+            <a href="https://www.kaggle.com/learn/certification/shreyastaware/advanced-sql">Advanced SQL</a>
+          </div>
+          <div class="cert-item">
+            <a href="https://www.kaggle.com/learn/certification/shreyastaware/computer-vision">Computer Vision</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
