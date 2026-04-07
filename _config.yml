@@ -2,3 +2,6 @@ title: Shreyas Taware
 theme: jekyll-theme-minimal
 logo: /assets/profile_pic.png
 google_analytics: G-R2Y91VDTGS
+url: "https://shreyastaware.me" # Add your domain
+plugins:
+  - jekyll-sitemap # Add this plugin
